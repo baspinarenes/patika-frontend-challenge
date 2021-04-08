@@ -77,6 +77,10 @@ a:active {
 .logo:hover {
     background-color: black;
     color: white;
+
+    -webkit-transition: 1000ms;
+    -ms-transition: 1000ms;
+    transition: 400ms;
 }
 
 .navigation {
@@ -99,6 +103,7 @@ a:active {
 
 .article-text {
     padding: 0 10%;
+    text-align: justify;
 }
 
 /* PRODUCTS */
