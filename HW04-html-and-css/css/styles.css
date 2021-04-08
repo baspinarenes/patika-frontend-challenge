@@ -1,0 +1,131 @@
+/* GENERAL */
+
+* {
+    font-family: "Ubuntu";
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:is(#logo) {
+    color: black;
+}
+
+a:active {
+    color: red;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-white {
+    color: white;
+}
+
+.fs-logo {
+    font-size: 1.9rem;
+}
+
+.fs-article-title {
+    font-size: 1.5rem;
+}
+
+.fs-product {
+    font-size: 1.2rem;
+}
+
+.fs-footer {
+    font-size: 0.8rem;
+}
+
+.mtb-100 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.top-bar {
+    height: 12vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: auto;
+    padding: 0 5px;
+    text-align: center;
+    border: 1px solid; padding: 10px;
+}
+
+.logo:hover {
+    background-color: black;
+    color: white;
+}
+
+.navigation {
+    text-align: center;
+    height: fit-content;
+}
+
+.navigation > ul {
+    list-style-type: none;
+}
+
+.navigation > ul > li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.article-title {
+    text-align: center;
+}
+
+.article-text {
+    padding: 0 10%;
+}
+
+/* PRODUCTS */
+
+.catalog-category {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+
+}
+
+.catalog-item {
+    width: 290px;
+    height: 350px;
+    margin: 5px;
+    border: 1px solid;
+}
+
+.category {
+    width: 290px;
+    height: 350px;
+    margin: 5px;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

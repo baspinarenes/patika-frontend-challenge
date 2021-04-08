@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/vscode
-# Edit at https://www.toptal.com/developers/gitignore?templates=vscode
-
 ### vscode ###
 .vscode/*
 !.vscode/settings.json
@@ -9,4 +6,5 @@
 !.vscode/extensions.json
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/vscode
+# Local History for Visual Studio Code
+.history/
