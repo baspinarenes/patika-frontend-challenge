@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    height: 60px;
+    padding: 6px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation {
+    padding: 0 11px 0 32px;
+    height: 48px;
+    width: 264px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+
+.nav-item-img {
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.nav-item-img:hover {
+    background-color: rgba(60,64,67,0.08);
+}
+
+.logo {
+    height: 194px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.search-section {
+    width: 100%;
+    padding: 26px 20px 20px 20px;
+}
+
+.search-area {
+    height: 46px;
+    width: 584px;
+    margin: 0 auto;
+    padding: 0 8px 0 14px;
+    border: 1px solid#dfe1e5;
+    border-radius: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-area:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.search-area:focus-within {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+#search-bar {
+    width: 447px;
+    height: 34px;
+    font-size: 16px;
+    border: none;
+}
+
+input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+
+.search-img {
+    margin: 0 8px;
+    height: 24px;
+    width: 28px;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    width: 120px;
+    top: 165%;
+    left: 50%;
+    margin-left: -62px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.search-img:hover .tooltiptext {
+    visibility: visible;
+}
+
+.search-img:hover .tooltiptext {
+    visibility: visible;
+}
+
+.search-buttons {
+    margin: 18px auto 0 auto;
+    width: fit-content;
+}
+
+input[type=button] {
+    margin: 11px 4px;
+    padding: 0 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+
+input[type=button]:focus {
+    outline: 0;
+    border: 1px solid rgb(59, 59, 237);
+}
+
+input[type=button]:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.empty-section {
+    height: 235px;
+    width: 100%;
+}
+
+.footer {
+    height: 96px;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.footer-country {
+    height: 48.6px;
+    width: 100%;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    height: 48.6px;
+    width: 100%;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav-item {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav-item:first-child {
+    justify-content: flex-start;
+}
+
+.footer-nav-item:last-child {
+    justify-content: flex-end;
+}
+
+.footer-nav-item > a {
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+
+    padding: 15px;
+}
+
+.footer-nav-item > a:first-child {
+    padding-left: 0;
+}
