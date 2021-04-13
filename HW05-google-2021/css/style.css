@@ -54,7 +54,7 @@ a:hover {
 .panel__nav-link {
     padding-left: 15px;
     font: 13px/24px Arial,sans-serif;
-
+    color: rgba(0,0,0,0.87);
 }
 
 .panel__nav-button {
@@ -118,7 +118,18 @@ a:hover {
     border: none;
 }
 
-.panel__search-extra-button--last-child {
+.panel__search-bar:focus {
+    border: none;
+    outline: none;
+}
+
+.panel__search-area-button {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.panel__search-area-button--last-child {
     margin: 0 8px;
 }
 
@@ -140,6 +151,19 @@ a:hover {
     min-width: 54px;
     cursor: pointer;
 }
+
+.panel__search-button:focus {
+    outline: 0;
+    border: 1px solid rgb(59, 59, 237);
+}
+
+.panel__search-button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 
 .panel__empty-section {
     flex-grow: 1;
@@ -192,74 +216,19 @@ a:hover {
 }
 
 @media only screen and (max-width: 400px) {
-    .KxwPGc {
-        justify-content: space-evenly;
+    .panel__footer-nav-item:nth-child(2) {
+        display: flex;
     }
-}
-
-/* .nav-item-img {
-    border-radius: 50%;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-Change color of dropdown links on hover
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:active .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-.logo {
-    height: 194px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-
-input[type=text]:focus {
-    border: none;
-    outline: none;
-}
-
-.search-img {
-    margin: 0 8px;
-    height: 24px;
-    width: 28px;
-    position: relative;
-    display: inline-block;
+    .panel__search-buttons {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .tooltiptext {
     width: 120px;
-    top: 165%;
-    left: 50%;
+    top: 150%;
+    left: 60%;
     margin-left: -62px; /* Use half of the width (120/2 = 60), to center the tooltip */
 
     visibility: hidden;
@@ -287,94 +256,6 @@ input[type=text]:focus {
     border-color: transparent transparent black transparent;
 }
 
-.search-img:hover .tooltiptext {
+.panel__search-area-button:hover .tooltiptext{
     visibility: visible;
-}
-
-.search-img:hover .tooltiptext {
-    visibility: visible;
-}
-
-.search-buttons {
-    margin: 18px auto 0 auto;
-    width: fit-content;
-}
-
-input[type=button] {
-    margin: 11px 4px;
-    padding: 0 16px;
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 27px;
-    height: 34px;
-    min-width: 54px;
-    cursor: pointer;
-}
-
-input[type=button]:focus {
-    outline: 0;
-    border: 1px solid rgb(59, 59, 237);
-}
-
-input[type=button]:hover {
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
-}
-
-.empty-section {
-    height: 237px;
-    width: 100%;
-}
-
-.footer {
-    height: 96px;
-    width: 100%;
-    background: #f2f2f2;
-}
-
-.footer-country {
-    height: 48.6px;
-    width: 100%;
-    padding: 15px 30px;
-    border-bottom: 1px solid #dadce0;
-
-    font-family: arial,sans-serif;
-    font-size: 15px;
-    color: rgba(0,0,0,.54);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-nav {
-    height: 48.6px;
-    width: 100%;
-    padding: 15px 30px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-nav-item {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-nav-item:first-child {
-    justify-content: flex-start;
-}
-
-.footer-nav-item:last-child {
-    justify-content: flex-end;
-}
-
-.footer-nav-item > a:first-child {
-    padding-left: 0;
 }
