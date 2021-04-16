@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************** 1) HEADER **************/
+
+.heighter {
+  height: 54px;
+}
+
+.header-container {
+  height: 54px;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: white;
+}
+
+.header {
+  max-width: 975px;
+  height: 53px;
+  padding: 0 20px;
+
+}
+
+.header__search-bar {
+  height: 28px;
+  width: 200px;
+
+  background-color: rgb(250, 250, 250);
+  
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color: #8e8e8e;
+  cursor: text;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.header__search-bar:focus {
+  border: 1px solid #ced4da;
+  background-color: rgb(250, 250, 250);
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/***************************************/
+
+/*************** 2) MAIN ***************/
+
+.main-container {
+  background-color: rgba(250,250,250);
+}
+
+.main {
+  max-width: 975px;
+  height: 1154px;
+  padding: 0 20px;
+}
+
+/*************** 3) LEFT SIDE ***************/
+
+.main__left-side {
+  max-width: 614px;
+  width: 100%;
+}
+
+/*************** 4) STORIES ***************/
+
+
+.main__story-bar {
+  height: 118px;
+}
+
+.main__story-list  {
+  list-style-type: none;
+  border: none;
+  overflow: scroll;
+  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main__story-list::-webkit-scrollbar { 
+  display: none;
+}
+
+.main__story {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.main__story-pp-div {
+  width: 66px;
+  height: 66px;
+  padding: 1px; 
+  border-radius: 100%; 
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__story-pp {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid rgba(0,0,0,.0975);
+}
+
+.main__story-title {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,Helvetica,Arial,sans-serif;
+  max-width: 74px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*************** 4) POSTS ***************/
+
+.main__profile-img-container {
+  padding: 1px;
+  border-radius: 100%; 
+  width: 38px;
+  height: 38px;
+}
+
+.main__profile-img-container--storied {
+  border: 2px solid red;
+}
+
+.main__profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid rgba(0,0,0,.0975);
+}
+
+.main__post-title {
+  font-weight: 600;
+  color: rgb(38,38,38);
+  font-size: 14px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.main__post-body {
+  font-size: 14px;
+}
+
+.post__share-btn {
+  pointer-events: none;
+  cursor: default;
+  opacity: .3;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+
+.main__right-side {
+  max-width: 293px;
+  width: 100%;
+}
+
+.right-side__profile {
+  margin: 18px 0 10px;
+  font-size: 14px;
+}
+
+.right-side__profile-img {
+  width: 56px;
+  height: 56px;
+}
+
+.right-side__suggestions {
+
+}
+
+.right-side__suggestion-list {
+  list-style-type: none;
+}
+
+.right-side__suggestion {
+  padding: 6px 0;
+  display: inline-block;
+}
+
+.right-side__suggestions-title {
+  font-size: 14px;
+  color: #8E8E8E;
+  font-weight: 600;
+}
+
+.right-side__show-all {
+  font-size: 12px;
+  color: #262626;
+  font-weight: 600;
+}
+
+
+.right-side__suggestion-pp {
+  width: 32px;
+  height: 32px;
+}
+
+.right-side__suggestion-nick {
+  font-size: 14px;
+}
+
+.right-side__suggestion-sub {
+  white-space: nowrap;
+  font-size: 12px;
+  overflow: hidden;
+  max-width: 195px;
+  text-overflow: ellipsis;
+}
+
+.right-side__suggestion-follow {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav {
+  font-size: 11px;
+  font-weight: 400;
+  color: #C7C7C7;
+}
+
+.nav__list {
+  margin-top: 25px;
+  list-style-type: none;
+}
+
+.nav__item {
+  display: inline;
+}
+
+.nav__item-link {
+  color: #C7C7C7;
+}
+
+.nav__item-link:hover {
+  color: #C7C7C7;
+}
+
+.nav__item:not(:last-of-type)::after {
+  content: '\00B7';
+  margin: 0 .25em 0 .25em;
+}

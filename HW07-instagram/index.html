@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
+        type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/1657b9e340.js" crossorigin="anonymous"></script>
+
+    <!-- Style.CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="heighter"></div>
+
+    <!-- Header - Start -->
+    <div class="header-container container-fluid fixed-top">
+        <div class="header mx-auto">
+            <!-- Nav - Start -->
+            <nav class="header__nav navbar navbar-expand navbar-light px-0 d-flex justify-content-between">
+                <!-- Logo - Start -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" />
+                </a>
+                <!-- Logo - End -->
+                <!-- Search Bar - Start -->
+                <div class="collapse navbar-collapse">
+                    <form class="form-inline my-2 my-lg-0 ml-5 d-none d-md-block ml-auto text-center">
+                        <input class="header__search-bar form-control mr-sm-2 empty text-center" type="search" onfocus="this.placeholder = ''" onblur="this.placeholder = '&#xF002; Ara'" placeholder="&#xF002; Ara" style="font-family:Arial, FontAwesome" aria-label="Search" />
+                    </form>
+                </div>
+                <!-- Search Bar - End -->
+                <!-- Menu Buttons - Start -->
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Home Button - Start -->
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="/" tabindex="0">
+                                <svg aria-label="Ana Sayfa" class="_8-yf5" fill="#262626" height="22"
+                                    viewBox="0 0 48 48" width="22">
+                                    <path
+                                        d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"
+                                        class=""></path>
+                                </svg><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <!-- Home Button - End -->
+                        <!-- Inbox Button - Start -->
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="/direct/inbox/" tabindex="0">
+                                <svg aria-label="Direct" class="_8-yf5" fill="#262626" height="22" viewBox="0 0 48 48"
+                                    width="22">
+                                    <path
+                                        d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                                        class=""></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Inbox Button - End -->
+                        <!-- Explore Button - Start -->
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="/explore/" tabindex="0">
+                                <svg aria-label="Kişiler Bul" class="_8-yf5" fill="#262626" height="22"
+                                    viewBox="0 0 48 48" width="22">
+                                    <path clip-rule="evenodd"
+                                        d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"
+                                        fill-rule="evenodd" class=""></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Explore Button - End -->
+                        <!-- Activity Button - Start -->
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#" style="font-size: 18px;"><i class="far fa-heart fa-lg"
+                                    style="color: black;"></i></a>
+                        </li>
+                        <!-- Activity Button - End -->
+                        <!-- Profile Button - Start -->
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="https://www.instagram.com/enesbaspinar07" target="_blank"><img
+                                    src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/89604493_2682214805356448_8838322489282002944_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=5SCFWSAWobsAX99PCH_&tn=aqYo2qDK0E_-28B_&edm=ALlQn9MAAAAA&ccb=7-4&oh=4d60fb21bc8d03825010558b56c28eac&oe=609C08B0&_nc_sid=48a2a6"
+                                    style="width: 24px; height: 24px; border-radius: 50%;" />
+                            </a>
+                        </li>
+                        <!-- Profile Button - End -->
+                    </ul>
+                </div>
+                <!-- Menu Buttons - End -->
+            </nav>
+            <!-- Nav - End -->
+        </div>
+    </div>
+    <!-- Header - End -->
+
+    <!-- Main - Start -->
+    <div class="main-container container-fluid pt-0 pt-sm-4 p-0">
+        <div class="main row mx-auto position-relative">
+            <!-- Left Side - Start -->
+            <div class="main__left-side col-12 col-lg-8 mx-auto mx-lg-0">
+                <!-- Stories - Start -->
+                <div class="main__story-bar row bg-white border p-3 ">
+                    <!-- Story List - Start -->
+                    <ul class="main__story-list w-100 d-flex justify-content-between">
+                        <!-- Story - Start -->
+                        <li class="main__story">
+                            <button>
+                                <div class="main__story-pp-div">
+                                    <img class="main__story-pp" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/85104092_2468965153203071_3405136160593281024_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=SVn_V90b3b4AX9JIKR9&edm=AHG7ALcAAAAA&ccb=7-4&oh=451cad13fabcf966023136140d1c28fc&oe=609DC7BE&_nc_sid=5cbaad" alt="">
+                                </div>
+                                <div class="main__story-title">vizyonergenc</div>
+                            </button>
+                        </li>
+                        <!-- Story - End -->
+                        <!-- Story - End -->
+                        <li class="main__story">
+                            <button>
+                                <div class="main__story-pp-div">
+                                    <img class="main__story-pp" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/149062484_100933948686179_1942325910598135830_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=2LiG3IXmabEAX-RTabT&edm=ABfd0MgAAAAA&ccb=7-4&oh=74c0da20cc3d391a5d554a3fb1643b5f&oe=609F3546&_nc_sid=7bff83" alt="">
+                                </div>
+                                <div class="main__story-title">hurturkuav</div>
+                            </button>
+                        </li>
+                        <!-- Story - End -->
+                        <!-- Story - Start -->
+                        <li class="main__story">
+                            <button>
+                                <div class="main__story-pp-div">
+                                    <img class="main__story-pp" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/85104092_2468965153203071_3405136160593281024_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=SVn_V90b3b4AX9JIKR9&edm=ABfd0MgAAAAA&ccb=7-4&oh=775f408ee354a89f31708c6318c41733&oe=609DC7BE&_nc_sid=7bff83" alt="">
+                                </div>
+                                <div class="main__story-title">tubitak</div>
+                            </button>
+                        </li>
+                        <!-- Story - End -->
+                        <!-- Story - Start -->
+                        <li class="main__story">
+                            <button>
+                                <div class="main__story-pp-div">
+                                    <img class="main__story-pp" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/120581549_1731204557027237_228586749924965966_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=w_KhJH2DFgMAX9c1Qe7&edm=AHG7ALcAAAAA&ccb=7-4&oh=f56d21fe19baf2d3d9e6dcf468eced71&oe=609FD5AA&_nc_sid=5cbaad" alt="">
+                                </div>
+                                <div class="main__story-title">ibrahimhaskologlu</div>
+                            </button>
+                        </li>
+                        <!-- Story - End -->
+                        <!-- Story - Start -->
+                        <li class="main__story">
+                            <button>
+                                <div class="main__story-pp-div">
+                                    <img class="main__story-pp" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/88197162_208708090246276_5997084640953761792_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=27Evi9ZiqJwAX85j5Ln&edm=AHG7ALcAAAAA&ccb=7-4&oh=4a072c4c2d7dd5cdce93184e8b3f6c6b&oe=60A09ACB&_nc_sid=5cbaad" alt="">
+                                </div>
+                                <div class="main__story-title">ozgurturhan38</div>
+                            </button>
+                        </li>
+                        <!-- Story - End -->
+                        <!-- Story - Start -->
+                        <li class="main__story">
+                            <button>
+                                <div class="main__story-pp-div">
+                                    <img class="main__story-pp" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/61258836_2527403047314293_5668780978684821504_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=Vz_K8IlC2i0AX8Q1G5c&edm=AHG7ALcAAAAA&ccb=7-4&oh=9e2eb1d21e8e09fca4c8d88dc41fa6f4&oe=609F1FCF&_nc_sid=5cbaad" alt="">
+                                </div>
+                                <div class="main__story-title">interestingengineering</div>
+                            </button>
+                        </li>
+                        <!-- Story - End -->
+                        <!-- Story - Start -->
+                        <li class="main__story">
+                            <button>
+                                <div class="main__story-pp-div">
+                                    <img class="main__story-pp" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/57289598_895722027447046_2710982936328404992_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=-3sx6nu-qlUAX8KeIve&edm=ABfd0MgAAAAA&ccb=7-4&oh=9b33d388aa652a878508bd645032014b&oe=60A0022B&_nc_sid=7bff83" alt="">
+                                </div>
+                                <div class="main__story-title">trtbelgesel</div>
+                            </button>
+                        </li>
+                        <!-- Story - End -->
+                    </ul>
+                    <!-- Story List - End -->
+                </div>
+                <!-- Stories - End -->
+                <!-- Posts - Start -->
+                <div class="main__post-container row mt-4">
+                    <div class="main__post col-12 p-0">
+                        <!-- Post - Start -->
+                        <div class="card mb-0 mb-sm-4">
+                            <!-- Post Header - Start -->
+                            <div class="card-header bg-white d-flex align-items-center">
+                                <div
+                                    class="main__profile-img-container main__profile-img-container--storied d-flex align-items-center justify-content-center">
+                                    <img class="main__profile-img"
+                                        src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/57289598_895722027447046_2710982936328404992_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=oBFnhc5R4ucAX9XmKBj&edm=AIQHJ4wAAAAA&ccb=7-4&oh=c6b727ff63ea68795ad626570796d7b0&oe=609C72EB&_nc_sid=7b02f1"
+                                        alt="">
+                                </div>
+                                <div class="main__post-title ml-2">
+                                    trtbelgesel</div>
+                                <a class="ml-auto" href="">
+                                    <svg aria-label="Diğer seçenekler" class="_8-yf5 " fill="#262626" height="16"
+                                        viewBox="0 0 48 48" width="16">
+                                        <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                                        <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                        <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- Post Header - End -->
+                            <!-- Post Image - Start -->
+                            <img class="card-img rounded-0 rounded-0"
+                                src="https://instagram.fbtz1-10.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/173209977_949321069225907_5323244927033407974_n.jpg?tp=1&_nc_ht=instagram.fbtz1-10.fna.fbcdn.net&_nc_cat=111&_nc_ohc=RMNgB7yUzGoAX97fHHs&edm=AIQHJ4wAAAAA&ccb=7-4&oh=6041c3487acde5027a3b942a126ddb7b&oe=609EA13D&_nc_sid=7b02f1"
+                                alt="Card image cap">
+                            <!-- Post Image - End -->
+                            <!-- Post Body - Start -->
+                            <div class="main__post-body card-body pb-2">
+                                <div class="posts__button d-flex">
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Beğen" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Yorum Yap" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path clip-rule="evenodd"
+                                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Gönderi Paylaş" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="ml-auto" href="">
+                                        <svg aria-label="Kaydet" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="mt-2"><a href=""><b class="text-dark">1986_sahra</b></a> ve <a href=""><b
+                                            class="text-dark">diğer kişiler</b></a> beğendi</div>
+                                <div class="mt-2"><a href=""><b class="text-dark">trtbelgesel</b>
+                                    </a>Merhabalar! 👋🏻 Bu haftaki etiket çalışmamızın teması... <a class="text-muted text-decoration-none"
+                                        href="">devamı</a><br>
+                                    <a class="text-muted text-decoration-none" href="">22 yorumun tümünü gör</a>
+                                </div>
+                                <p class="card-text mt-1"><small class="text-muted text-uppercase">1 saat önce</small>
+                                </p>
+                            </div>
+                            <!-- Post Body - End -->
+                            <div class="card-footer bg-white align-items-center d-none d-md-flex">
+                                <a class="mr-4" href="">
+                                    <svg aria-label="İfade Simgesi" class="_8-yf5 " fill="#262626" height="26"
+                                        viewBox="0 0 48 48" width="26">
+                                        <path
+                                            d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z">
+                                        </path>
+                                        <path
+                                            d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <input class="border-0 w-100" type="text" name="" placeholder="Yorum ekle..." id="">
+                                <a class="post__share-btn ml-3 text-decoration-none" href="">Paylaş</a>
+                            </div>
+                        </div>
+                        <!-- Post - End -->
+                        <!-- Post - Start -->
+                        <div class="card mb-0 mb-sm-4">
+                            <!-- Post Header - Start -->
+                            <div class="card-header bg-white d-flex align-items-center">
+                                <div
+                                    class="main__profile-img-container main__profile-img-container--storied d-flex align-items-center justify-content-center">
+                                    <img class="main__profile-img"
+                                        src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/149062484_100933948686179_1942325910598135830_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=2LiG3IXmabEAX-RTabT&edm=AP_V10EAAAAA&ccb=7-4&oh=38508e92c9a6db1856162d5c6db31651&oe=609F3546&_nc_sid=4f375e"
+                                        alt="">
+                                </div>
+                                <div class="main__post-title ml-2">
+                                    hurturkuav</div>
+                                <a class="ml-auto" href="">
+                                    <svg aria-label="Diğer seçenekler" class="_8-yf5 " fill="#262626" height="16"
+                                        viewBox="0 0 48 48" width="16">
+                                        <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                                        <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                        <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <!-- Post Header - End -->
+                            <!-- Post Image - Start -->
+                            <img class="card-img rounded-0 rounded-0"
+                                src="https://instagram.fbtz1-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/169464988_337961454551148_5986529837914326274_n.jpg?tp=1&_nc_ht=instagram.fbtz1-2.fna.fbcdn.net&_nc_cat=100&_nc_ohc=8rdOXIbrGwkAX-lrzBS&edm=AP_V10EAAAAA&ccb=7-4&oh=f8dca05be3ccb0881cc63f2bf57bc9cf&oe=609EF27E&_nc_sid=4f375e"
+                                alt="Card image cap">
+                            <!-- Post Image - End -->
+                            <!-- Post Body - Start -->
+                            <div class="main__post-body card-body pb-2">
+                                <div class="posts__button d-flex">
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Beğen" class="_8-yf5 " fill="#ed4956" height="24" viewBox="0 0 48 48" width="24">
+                                            <path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Yorum Yap" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path clip-rule="evenodd"
+                                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Gönderi Paylaş" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="ml-auto" href="">
+                                        <svg aria-label="Kaydet" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="mt-2"><a href=""><b class="text-dark">ahmtcetks</b></a> ve <a href=""><b class="text-dark">diğer kişiler</b></a> beğendi</div>
+                                <div class="mt-2"><a href=""><b class="text-dark">hurturkuav</b>
+                                    </a>2021 ekibimiz.
+                                </div>
+                                <p class="card-text mt-1"><small class="text-muted text-uppercase">7 Nisan</small>
+                                </p>
+                            </div>
+                            <!-- Post Body - End -->
+                            <div class="card-footer bg-white align-items-center d-none d-md-flex">
+                                <a class="mr-4" href="">
+                                    <svg aria-label="İfade Simgesi" class="_8-yf5 " fill="#262626" height="26"
+                                        viewBox="0 0 48 48" width="26">
+                                        <path
+                                            d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z">
+                                        </path>
+                                        <path
+                                            d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <input class="border-0 w-100" type="text" name="" placeholder="Yorum ekle..." id="">
+                                <a class="post__share-btn ml-3 text-decoration-none" href="">Paylaş</a>
+                            </div>
+                        </div>
+                        <!-- Post - End -->
+                        <!-- Post - Start -->
+                        <div class="card mb-0 mb-sm-4">
+                            <!-- Post Header - Start -->
+                            <div class="card-header bg-white d-flex align-items-center">
+                                <div
+                                    class="main__profile-img-container main__profile-img-container--storied d-flex align-items-center justify-content-center">
+                                    <img class="main__profile-img"
+                                        src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/105971749_581051382486071_1053777149100084988_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=dFA7aUZiNugAX-UVJ0h&edm=AABBvjUAAAAA&ccb=7-4&oh=d21cd8ffeead6d48ac513a09241fb5f4&oe=609D9427&_nc_sid=83d603"
+                                        alt="">
+                                </div>
+                                <div class="main__post-title ml-2">
+                                    trtbelgesel</div>
+                                <a class="ml-auto" href="">
+                                    <svg aria-label="Diğer seçenekler" class="_8-yf5 " fill="#262626" height="16"
+                                        viewBox="0 0 48 48" width="16">
+                                        <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                                        <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                        <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- Post Header - End -->
+                            <!-- Post Image - Start -->
+                            <img class="card-img rounded-0 rounded-0"
+                                src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/167478767_262189828900448_7652582391793568084_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_cat=108&_nc_ohc=0_LRLlBE0OkAX8GOr88&edm=AP_V10EAAAAA&ccb=7-4&oh=621bb3f04ee99dcd1d4854556cc055b9&oe=609E891B&_nc_sid=4f375e"
+                                alt="Card image cap">
+                            <!-- Post Image - End -->
+                            <!-- Post Body - Start -->
+                            <div class="main__post-body card-body pb-2">
+                                <div class="posts__button d-flex">
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Beğen" class="_8-yf5 " fill="#ed4956" height="24" viewBox="0 0 48 48" width="24">
+                                            <path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Yorum Yap" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path clip-rule="evenodd"
+                                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Gönderi Paylaş" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="ml-auto" href="">
+                                        <svg aria-label="Kaydet" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 28.9 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1z"></path></svg>
+                                    </a>
+                                </div>
+                                <div class="mt-2"><a href=""><b class="text-dark">smileaydemir</b></a> ve <a href=""><b
+                                            class="text-dark">diğer kişiler</b></a> beğendi</div>
+                                <div class="mt-2"><a href=""><b class="text-dark">kodluyoruz</b>
+                                    </a>Çok beklenen bootcamp'lerden birisi olan Front-End Web Development Bootcamp'i başvuruya açıldı! <a class="text-muted text-decoration-none"
+                                        href="">devamı</a><br>
+                                    <a class="text-muted text-decoration-none" href="">22 yorumun tümünü gör</a>
+                                </div>
+                                <p class="card-text mt-1"><small class="text-muted text-uppercase">25 Mart</small>
+                                </p>
+                            </div>
+                            <!-- Post Body - End -->
+                            <div class="card-footer bg-white align-items-center d-none d-md-flex">
+                                <a class="mr-4" href="">
+                                    <svg aria-label="İfade Simgesi" class="_8-yf5 " fill="#262626" height="26"
+                                        viewBox="0 0 48 48" width="26">
+                                        <path
+                                            d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z">
+                                        </path>
+                                        <path
+                                            d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <input class="border-0 w-100" type="text" name="" placeholder="Yorum ekle..." id="">
+                                <a class="post__share-btn ml-3 text-decoration-none" href="">Paylaş</a>
+                            </div>
+                        </div>
+                        <!-- Post - End -->
+                        <!-- Post - Start -->
+                        <div class="card mb-0 mb-sm-4">
+                            <!-- Post Header - Start -->
+                            <div class="card-header bg-white d-flex align-items-center">
+                                <div
+                                    class="main__profile-img-container d-flex align-items-center justify-content-center">
+                                    <img class="main__profile-img"
+                                        src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/135759402_481707293226763_7028528049297638637_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=mFX3l5yR3DcAX9sdUTQ&edm=AAeKFY8AAAAA&ccb=7-4&oh=d7450d238718b653c236c7ad1fb1f760&oe=609D7D4E&_nc_sid=c982ba"
+                                        alt="">
+                                </div>
+                                <div class="main__post-title ml-2">
+                                    teknofest</div>
+                                <a class="ml-auto" href="">
+                                    <svg aria-label="Diğer seçenekler" class="_8-yf5 " fill="#262626" height="16"
+                                        viewBox="0 0 48 48" width="16">
+                                        <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                                        <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                        <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5">
+                                        </circle>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- Post Header - End -->
+                            <!-- Post Image - Start -->
+                            <img class="card-img rounded-0 rounded-0"
+                                src="https://instagram.fbtz1-7.fna.fbcdn.net/v/t51.2885-15/e35/173097114_359377192121512_1640490445782781081_n.jpg?tp=1&_nc_ht=instagram.fbtz1-7.fna.fbcdn.net&_nc_cat=104&_nc_ohc=vQVY0-jgCzMAX_Q1t2G&edm=AAeKFY8AAAAA&ccb=7-4&oh=3b95767ce669ee2b819ff36223bbfbe2&oe=60A0209A&_nc_sid=c982ba"
+                                alt="Card image cap">
+                            <!-- Post Image - End -->
+                            <!-- Post Body - Start -->
+                            <div class="main__post-body card-body pb-2">
+                                <div class="posts__button d-flex">
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Beğen" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Yorum Yap" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path clip-rule="evenodd"
+                                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="pr-2" href="">
+                                        <svg aria-label="Gönderi Paylaş" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="ml-auto" href="">
+                                        <svg aria-label="Kaydet" class="_8-yf5 " fill="#262626" height="24"
+                                            viewBox="0 0 48 48" width="24">
+                                            <path
+                                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="mt-2"><a href=""><b class="text-dark">alper_drn</b></a> ve <a href=""><b class="text-dark">diğer kişiler</b></a> beğendi</div>
+                                <div class="mt-2"><a href=""><b class="text-dark">kocaelito</b>
+                                    </a>10 yıldır göklere ve her sene festivalimize imzasını atan değerli paydaşımız #SOLOTÜRK’ün kuruluş yıl dönümü kutlu... <a class="text-muted text-decoration-none"
+                                        href="">devamı</a><br>
+                                    <a class="text-muted text-decoration-none" href="">5 yorumun tümünü gör</a>
+                                </div>
+                                <p class="card-text mt-1"><small class="text-muted text-uppercase">17 saat önce</small>
+                                </p>
+                            </div>
+                            <!-- Post Body - End -->
+                            <div class="card-footer bg-white align-items-center d-none d-md-flex">
+                                <a class="mr-4" href="">
+                                    <svg aria-label="İfade Simgesi" class="_8-yf5 " fill="#262626" height="26"
+                                        viewBox="0 0 48 48" width="26">
+                                        <path
+                                            d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z">
+                                        </path>
+                                        <path
+                                            d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <input class="border-0 w-100" type="text" name="" placeholder="Yorum ekle..." id="">
+                                <a class="post__share-btn ml-3 text-decoration-none" href="">Paylaş</a>
+                            </div>
+                        </div>
+                        <!-- Post - End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Posts - End -->
+
+            <!-- Right Side - Start -->
+            <div class="main__right-side ml-auto d-none d-lg-block">
+                <div class="main__right-side" style="position: fixed;">
+                    <div class="right-side__profile d-flex align-items-center">
+                        <img class="right-side__profile-img rounded-circle"
+                            src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/89604493_2682214805356448_8838322489282002944_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=5SCFWSAWobsAX99PCH_&edm=AIQHJ4wAAAAA&ccb=7-4&oh=1933943d3d3b3af87e39fe9fbc206032&oe=609C08B0&_nc_sid=7b02f1"
+                            alt="">
+                        <div class="mx-3">
+                            <a class="text-dark font-weight-bold" href="">enesbaspinar07</a><br>
+                            <span class="text-muted">Enes Başpınar</span>
+                        </div>
+                        <a class="right-side__switch-account ml-auto" href="">Geçiş Yap</a>
+                    </div>
+                    <div class="right-side__suggestions mt-4 d-block">
+                        <span class="right-side__suggestions-title float-left">Senin İçin Öneriler</span>
+                        <a class="right-side__show-all float-right">Tümünü Gör</a>
+
+                        <ul class="right-side__suggestion-list mt-1">
+                            <!-- Suggestion - Start -->
+                            <li class="right-side__suggestion w-100 d-flex align-items-center">
+                                <img class="right-side__suggestion-pp rounded-circle" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/133657526_506967183601918_6003168089936886648_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=peo7RsuPECEAX_fdAF_&edm=AEF8tYYAAAAA&ccb=7-4&oh=e40c19a5d7220edf34cc1eba72934c90&oe=60A09467&_nc_sid=a9513d"
+                                    alt="">
+                                <div class="mx-2">
+                                    <a class="right-side__suggestion-nick text-dark font-weight-bold d-block"
+                                        href="">kourobotsavaslarikulubu</a>
+                                    <div class="right-side__suggestion-sub text-muted d-block">k.tercan1 + 4 diğer kişi takip ediyor</div>
+                                </div>
+                                <a class="right-side__suggestion-follow ml-auto" href="">Takip Et</a>
+                            </li>
+                            <!-- Suggestion - End -->
+                            <!-- Suggestion - Start -->
+                            <li class="right-side__suggestion w-100 d-flex align-items-center">
+                                <img class="right-side__suggestion-pp rounded-circle" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/80693287_1833013263498904_3732592730757398528_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=5gaNIiWI7fEAX8n-Yl7&edm=AEF8tYYAAAAA&ccb=7-4&oh=eedee9a719501291e1901d5cb0687661&oe=609F2754&_nc_sid=a9513d"
+                                    alt="">
+                                <div class="mx-2">
+                                    <a class="right-side__suggestion-nick text-dark font-weight-bold d-block"
+                                        href="">tamsat_tr</a>
+                                    <div class="right-side__suggestion-sub text-muted d-block">gmihatakimi + 2 diğer kişi takip ediyor</div>
+                                </div>
+                                <a class="right-side__suggestion-follow ml-auto" href="">Takip Et</a>
+                            </li>
+                            <!-- Suggestion - End -->
+                            <!-- Suggestion - Start -->
+                            <li class="right-side__suggestion w-100 d-flex align-items-center">
+                                <img class="right-side__suggestion-pp rounded-circle" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/92469245_460133438160367_9083049081562988544_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=ycjGmOgV9X0AX_ZOxo2&edm=AEF8tYYAAAAA&ccb=7-4&oh=cba802f7177d032d00a49b886472235e&oe=609F0AF9&_nc_sid=a9513d"
+                                    alt="">
+                                <div class="mx-2">
+                                    <a class="right-side__suggestion-nick text-dark font-weight-bold d-block"
+                                        href="">blackbird_uav</a>
+                                    <span class="right-side__suggestion-sub text-muted d-block">ytusigmaaero + 1 diğer kişi
+                                        takip ediyor
+                                    </span>
+                                </div>
+                                <a class="right-side__suggestion-follow ml-auto" href="">Takip Et</a>
+                            </li>
+                            <!-- Suggestion - End -->
+                            <!-- Suggestion - Start -->
+                            <li class="right-side__suggestion w-100 d-flex align-items-center">
+                                <img class="right-side__suggestion-pp rounded-circle" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/11849240_906075426097770_509201518_a.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=li6oe2VTeQEAX8NmsXy&edm=AGBWlhEAAAAA&ccb=7-4&oh=80a210ceca0bde9fe61e01fe457d5052&oe=609D8139&_nc_sid=57d425"
+                                    alt="">
+                                <div class="mx-2">
+                                    <a class="right-side__suggestion-nick text-dark font-weight-bold d-block"
+                                        href="">alibalbars</a>
+                                    <span class="right-side__suggestion-sub text-muted d-block">aliihsansenel + 1 diğer kişi
+                                        takip ediyor
+                                    </span>
+                                </div>
+                                <a class="right-side__suggestion-follow ml-auto" href="">Takip Et</a>
+                            </li>
+                            <!-- Suggestion - End -->
+                            <!-- Suggestion - Start -->
+                            <li class="right-side__suggestion w-100 d-flex align-items-center">
+                                <img class="right-side__suggestion-pp rounded-circle" src="https://instagram.fbtz1-9.fna.fbcdn.net/v/t51.2885-19/s150x150/157998782_183955659880763_2482402595953155886_n.jpg?tp=1&_nc_ht=instagram.fbtz1-9.fna.fbcdn.net&_nc_ohc=HOIYVc16TWIAX9P2MPn&edm=AEF8tYYAAAAA&ccb=7-4&oh=d55bd94119e6815d626ba476b72b6952&oe=60A09672&_nc_sid=a9513d"
+                                    alt="">
+                                <div class="mx-2">
+                                    <a class="right-side__suggestion-nick text-dark font-weight-bold d-block"
+                                        href="">technoword.site</a>
+                                    <span class="right-side__suggestion-sub text-muted d-block">gmihatakimi takip ediyor
+                                    </span>
+                                </div>
+                                <a class="right-side__suggestion-follow ml-auto" href="">Takip Et</a>
+                            </li>
+                            <!-- Suggestion - End -->
+                        </ul>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none"
+                                        href="">Hakkında</a></li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none" href="">Yardım</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none" href="">Basın</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none" href="">API</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none" href="">İş
+                                        Fırsatları</a></li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none"
+                                        href="">Gizlilik</a></li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none"
+                                        href="">Koşullar</a></li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none"
+                                        href="">Konumlar</a></li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none" href="">Başlıca
+                                        Hesaplar</a></li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none" href="">Konu
+                                        Etiketleri</a></li>
+                                <li class="nav__item"><a class="nav__item-link text-decoration-none" href="">Dil</a>
+                                </li>
+                            </ul>
+                            <span>© 2021 INSTAGRAM FROM FACEBOOK</span>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Right Side - End -->
+        </div>
+    </div>
+    <!-- Main - Start -->
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
