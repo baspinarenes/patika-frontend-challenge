@@ -1,0 +1,137 @@
+$link1-color: #0a66c2;
+$link2-color: rgba(0,0,0,0.6);
+$background-color: #f5f5f5;
+$premium-text-color: #915907;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-gray {
+    fill: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    background-color: $background-color;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+}
+
+
+.header {
+    height: 53px;
+    padding: 0 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    background-color: white;
+
+    .container {
+        background-color: white;
+        height: 100%;
+        width: 1128px;
+
+        .logo {
+            margin-right: 8px;
+
+            svg {
+                color: #0a66c2;
+            }
+        }
+
+        .search-area {
+            position: relative;
+            margin-right: auto;
+
+            .search-bar {
+                padding: 0 8px 0 40px;
+                font-size: 14px;
+                border: none;
+                box-shadow: none;
+                background-color: #eef3f8;
+                height: 34px;
+                width: 280px;
+            }
+
+            .search-icon {
+                padding: 9px 8px 8px 16px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .primary-nav-items {
+            list-style-type: none;
+            display: flex;
+
+            .primary-nav-item {
+                color: rgba(0, 0, 0, 0.6);
+                min-height: 52px;
+                min-width: 80px;
+
+                &:first-of-type{
+                    border-bottom: 2px solid black;
+                }
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.content-area {
+    width: 1128px;
+    margin-top: 24px;
+
+    .left-side {
+        width: 225px;
+
+        .summary {
+            padding-top: 16px;
+            background-color: white;
+            border: 1px solid rgba(0,0,0,0.6);
+            
+            .profile-img{
+                width: 72px;
+                height: 72px;
+                border-radius: 36px;
+                margin-bottom: 20px;
+            }
+
+            .name {
+                margin-top: 4px;
+            }
+        }
+
+        .explore {
+            margin-bottom: 8px;
+            background-color: white;
+        }
+    }
+
+    .middle-side {
+
+    }
+
+    .right-side {
+
+    }
+}
+
+@media screen and (max-width: 1176px) {
+    .header .container {
+        justify-content: start;
+        margin: 0 !important;
+    }
+
+    .search-area {
+        display: none !important;
+    }
+
+    .primary-nav-item:first-child {
+        display: block !important;
+    }
+}
