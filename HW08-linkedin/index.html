@@ -6,212 +6,279 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
-        integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f"
-        crossorigin="anonymous"></script>
-
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" type="image/x-icon">
-
-    <!-- Style.css -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Akış | LinkedIn</title>
+    <title>Akış | Linkedin</title>
 </head>
 
 <body>
-    <header class="header ">
-        <div class="container p-0 m-auto d-flex align-items-center justify-content-between">
-            <a class="logo" href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+    <div class="header__container">
+        <div class="header">
+            <a class="header__logo" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
+                    class="global-nav__logo">
                     <path
                         d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
                         fill="currentColor"></path>
+
                 </svg>
             </a>
-            <div class="search-area d-flex align-items-center mr-auto">
-                <input class="search-bar" placeholder="Arama Yap" aria-label="Arama Yap" type="text">
-                <div class="search-icon d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
-                        fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+            <div class="header__search-area">
+                <div class="header__search-bar">
+                    <input type="search" placeholder="Arama Yap">
+                    <svg class="header__search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                        data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16"
+                        focusable="false">
                         <path
                             d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z">
                         </path>
                     </svg>
                 </div>
             </div>
-            <ul class="primary-nav-items my-0 h-100">
-                <li class="primary-nav-item d-none justify-content-center align-items-center">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-dark w-100 h-100"
-                        href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                            <path d="M21.41 18.59l-5.27-5.28A6.83 6.83 0 0017 10a7 7 0 10-7 7 6.83 6.83 0 003.31-.86l5.28 5.27a2 2 0 002.82-2.82zM5 10a5 5 0 115 5 5 5 0 01-5-5z"></path>
-                          </svg>
-                        <span>Arama Yap</span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-dark w-100 h-100"
-                        href="">
-                        <svg height="24" width="24">
-                            <path d="m23 9v2h-2v7c0 1.7-1.3 3-3 3h-4v-6h-4v6h-4c-1.7 0-3-1.3-3-3v-7h-2v-2l11-7z"></path>
-                            <path d="m20 2h-3v3.2l3 1.9z"></path>
-                        </svg>
-                        <span>Ana Sayfa</span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-gray w-100 h-100"
-                        href="">
-                        <svg height="24" width="24">
-                            <path
-                                d="m12 16v6h-9v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3zm5.5-3c1.9 0 3.5-1.6 3.5-3.5s-1.6-3.5-3.5-3.5-3.5 1.6-3.5 3.5 1.6 3.5 3.5 3.5zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5v4.5h7v-4.5c0-1.4-1.1-2.5-2.5-2.5zm-11-13c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z">
-                            </path>
-                        </svg>
-                        <span>Ağım</span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-gray w-100 h-100"
-                        href="">
-                        <svg height="24" width="24">
-                            <path
-                                d="m17 6v-1c0-1.7-1.3-3-3-3h-4c-1.7 0-3 1.3-3 3v1h-5v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-4zm-8-1c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1h-6zm10 9c1.2 0 2.3-.5 3-1.4v4.4c0 1.7-1.3 3-3 3h-14c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4z">
-                            </path>
-                        </svg>
-                        <span>İş İlanları</span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-gray w-100 h-100"
-                        href="">
-                        <svg height="24" width="24">
-                            <path
-                                d="M16 3H8C6.14348 3 4.36301 3.77847 3.05025 5.16416C1.7375 6.54984 1 8.42923 1 10.3889C1 12.3485 1.7375 14.2279 3.05025 15.6136C4.36301 16.9993 6.14348 17.7778 8 17.7778H12V22L20.16 16.3106C21.0512 15.639 21.7751 14.7495 22.2697 13.7183C22.7643 12.687 23.0148 11.5446 23 10.3889C23 8.42923 22.2625 6.54984 20.9497 5.16416C19.637 3.77847 17.8565 3 16 3ZM8 11.7083C7.75277 11.7083 7.5111 11.631 7.30554 11.486C7.09998 11.341 6.93976 11.1349 6.84515 10.8938C6.75054 10.6527 6.72579 10.3874 6.77402 10.1315C6.82225 9.87553 6.9413 9.64043 7.11612 9.4559C7.29093 9.27137 7.51366 9.14571 7.75614 9.0948C7.99861 9.04389 8.24995 9.07002 8.47835 9.16988C8.70676 9.26975 8.90199 9.43886 9.03934 9.65585C9.17669 9.87283 9.25 10.1279 9.25 10.3889C9.25 10.7388 9.1183 11.0744 8.88388 11.3219C8.64946 11.5693 8.33152 11.7083 8 11.7083ZM12 11.7083C11.7528 11.7083 11.5111 11.631 11.3055 11.486C11.1 11.341 10.9398 11.1349 10.8452 10.8938C10.7505 10.6527 10.7258 10.3874 10.774 10.1315C10.8222 9.87553 10.9413 9.64043 11.1161 9.4559C11.2909 9.27137 11.5137 9.14571 11.7561 9.0948C11.9986 9.04389 12.2499 9.07002 12.4784 9.16988C12.7068 9.26975 12.902 9.43886 13.0393 9.65585C13.1767 9.87283 13.25 10.1279 13.25 10.3889C13.25 10.7388 13.1183 11.0744 12.8839 11.3219C12.6495 11.5693 12.3315 11.7083 12 11.7083ZM16 11.7083C15.7528 11.7083 15.5111 11.631 15.3055 11.486C15.1 11.341 14.9398 11.1349 14.8452 10.8938C14.7505 10.6527 14.7258 10.3874 14.774 10.1315C14.8222 9.87553 14.9413 9.64043 15.1161 9.4559C15.2909 9.27137 15.5137 9.14571 15.7561 9.0948C15.9986 9.04389 16.2499 9.07002 16.4784 9.16988C16.7068 9.26975 16.902 9.43886 17.0393 9.65585C17.1767 9.87283 17.25 10.1279 17.25 10.3889C17.25 10.7388 17.1183 11.0744 16.8839 11.3219C16.6495 11.5693 16.3315 11.7083 16 11.7083Z">
-                            </path>
-                        </svg>
-                        <span>Mesajlaşma</span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-gray w-100 h-100"
-                        href="">
-                        <svg height="24" width="24">
-                            <path
-                                d="M13.7 19C13.9 19.3 14 19.6 14 20C14 21.1 13.1 22 12 22C10.9 22 10 21.1 10 20C10 19.6 10.1 19.3 10.3 19H2V18C2 17 2.4 16.1 3.2 15.2L4.2 14H19.9L20.9 15.2C21.7 16.2 22.1 17.1 22.1 18V19H13.7ZM18.2 7.4C17.8 4.3 15.1 2 12 2C8.9 2 6.2 4.3 5.8 7.4L5 13H19L18.2 7.4Z">
-                            </path>
-                        </svg>
-                        <span>Bildirimler</span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center border-right">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-gray w-100 h-100"
-                        href="">
-                        <img width="24"
-                            src="https://media-exp1.licdn.com/dms/image/C5603AQGOWlnp2QWz2A/profile-displayphoto-shrink_100_100/0/1564052885815?e=1624492800&amp;v=beta&amp;t=em2baicdAvg7ZcRutO8N21VxQeApU0AIGVLKoXQ7gYM"
-                            height="24" class="rounded-circle">
-                        <span class="d-flex">
-                            Ben
-                            <svg id="global-nav-icon--classic__down-arrow" width="16" height="16"
-                                data-supported-dps="16x16">
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
                                 <path
-                                    d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z">
+                                    d="M21.41 18.59l-5.27-5.28A6.83 6.83 0 0017 10a7 7 0 10-7 7 6.83 6.83 0 003.31-.86l5.28 5.27a2 2 0 002.82-2.82zM5 10a5 5 0 115 5 5 5 0 01-5-5z">
                                 </path>
                             </svg>
-                        </span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center">
-                    <a class="d-flex flex-column align-items-center justify-content-center text-gray w-100 h-100"
-                        href="">
-                        <svg id="global-nav-icon--classic__work" height="24" width="24">
-                            <path d="M10 10h4v4h-4v-4zm0 11h4v-4h-4v4zm-7-7h4v-4H3v4zm0 7h4v-4H3v4zM3 7h4V3H3v4zm14 7h4v-4h-4v4zm0-11v4h4V3h-4zm-7 4h4V3h-4v4zm7 14h4v-4h-4v4z"></path>
-                          </svg>
-                        <span class="d-flex">
-                            İş
-                            <svg id="global-nav-icon--classic__down-arrow" width="16" height="16"
-                                data-supported-dps="16x16">
+                            <span>Arama Yap</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item header__nav-list-item--active">
+                        <a class="header__nav-list-item-link" href="">
+                            <svg height="24" width="24">
+                                <path d="m23 9v2h-2v7c0 1.7-1.3 3-3 3h-4v-6h-4v6h-4c-1.7 0-3-1.3-3-3v-7h-2v-2l11-7z">
+                                </path>
+                                <path d="m20 2h-3v3.2l3 1.9z"></path>
+                            </svg>
+                            <span>Ana Sayfa</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link" href="">
+                            <svg id="global-nav-icon--mercado__my-network" height="24" width="24">
                                 <path
-                                    d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z">
+                                    d="m12 16v6h-9v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3zm5.5-3c1.9 0 3.5-1.6 3.5-3.5s-1.6-3.5-3.5-3.5-3.5 1.6-3.5 3.5 1.6 3.5 3.5 3.5zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5v4.5h7v-4.5c0-1.4-1.1-2.5-2.5-2.5zm-11-13c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z">
                                 </path>
                             </svg>
-                        </span>
-                    </a>
-                </li>
-                <li class="primary-nav-item d-flex justify-content-center align-items-center">
-                    <a class="text-center" style="font-size: 12px; 
-                    max-width: 125px; color: #915907;"
-                        href="">
-                        Premium'u 1 Ay Ücretsiz Deneyin
-                    </a>
-                </li>
-            </ul>
+                            <span>Ağım</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link" href="">
+                            <svg id="global-nav-icon--mercado__jobs" height="24" width="24">
+                                <path
+                                    d="m17 6v-1c0-1.7-1.3-3-3-3h-4c-1.7 0-3 1.3-3 3v1h-5v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-4zm-8-1c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1h-6zm10 9c1.2 0 2.3-.5 3-1.4v4.4c0 1.7-1.3 3-3 3h-14c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4z">
+                                </path>
+                            </svg>
+                            <span>İş İlanları</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link" href="">
+                            <svg id="global-nav-icon--mercado__messaging" height="24" width="24">
+                                <path
+                                    d="M16 3H8C6.14348 3 4.36301 3.77847 3.05025 5.16416C1.7375 6.54984 1 8.42923 1 10.3889C1 12.3485 1.7375 14.2279 3.05025 15.6136C4.36301 16.9993 6.14348 17.7778 8 17.7778H12V22L20.16 16.3106C21.0512 15.639 21.7751 14.7495 22.2697 13.7183C22.7643 12.687 23.0148 11.5446 23 10.3889C23 8.42923 22.2625 6.54984 20.9497 5.16416C19.637 3.77847 17.8565 3 16 3ZM8 11.7083C7.75277 11.7083 7.5111 11.631 7.30554 11.486C7.09998 11.341 6.93976 11.1349 6.84515 10.8938C6.75054 10.6527 6.72579 10.3874 6.77402 10.1315C6.82225 9.87553 6.9413 9.64043 7.11612 9.4559C7.29093 9.27137 7.51366 9.14571 7.75614 9.0948C7.99861 9.04389 8.24995 9.07002 8.47835 9.16988C8.70676 9.26975 8.90199 9.43886 9.03934 9.65585C9.17669 9.87283 9.25 10.1279 9.25 10.3889C9.25 10.7388 9.1183 11.0744 8.88388 11.3219C8.64946 11.5693 8.33152 11.7083 8 11.7083ZM12 11.7083C11.7528 11.7083 11.5111 11.631 11.3055 11.486C11.1 11.341 10.9398 11.1349 10.8452 10.8938C10.7505 10.6527 10.7258 10.3874 10.774 10.1315C10.8222 9.87553 10.9413 9.64043 11.1161 9.4559C11.2909 9.27137 11.5137 9.14571 11.7561 9.0948C11.9986 9.04389 12.2499 9.07002 12.4784 9.16988C12.7068 9.26975 12.902 9.43886 13.0393 9.65585C13.1767 9.87283 13.25 10.1279 13.25 10.3889C13.25 10.7388 13.1183 11.0744 12.8839 11.3219C12.6495 11.5693 12.3315 11.7083 12 11.7083ZM16 11.7083C15.7528 11.7083 15.5111 11.631 15.3055 11.486C15.1 11.341 14.9398 11.1349 14.8452 10.8938C14.7505 10.6527 14.7258 10.3874 14.774 10.1315C14.8222 9.87553 14.9413 9.64043 15.1161 9.4559C15.2909 9.27137 15.5137 9.14571 15.7561 9.0948C15.9986 9.04389 16.2499 9.07002 16.4784 9.16988C16.7068 9.26975 16.902 9.43886 17.0393 9.65585C17.1767 9.87283 17.25 10.1279 17.25 10.3889C17.25 10.7388 17.1183 11.0744 16.8839 11.3219C16.6495 11.5693 16.3315 11.7083 16 11.7083Z">
+                                </path>
+                            </svg>
+                            <span>Mesajlaşma</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link" href="">
+                            <svg id="global-nav-icon--mercado__notifications" height="24" width="24">
+                                <path
+                                    d="M13.7 19C13.9 19.3 14 19.6 14 20C14 21.1 13.1 22 12 22C10.9 22 10 21.1 10 20C10 19.6 10.1 19.3 10.3 19H2V18C2 17 2.4 16.1 3.2 15.2L4.2 14H19.9L20.9 15.2C21.7 16.2 22.1 17.1 22.1 18V19H13.7ZM18.2 7.4C17.8 4.3 15.1 2 12 2C8.9 2 6.2 4.3 5.8 7.4L5 13H19L18.2 7.4Z">
+                                </path>
+                            </svg>
+                            <span>Bildirimler</span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link header__nav-list-item-link--profile" href="">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQGOWlnp2QWz2A/profile-displayphoto-shrink_100_100/0/1564052885815?e=1624492800&amp;v=beta&amp;t=em2baicdAvg7ZcRutO8N21VxQeApU0AIGVLKoXQ7gYM"
+                                alt="Enes Başpınar" id="ember33" class="global-nav__me-photo ember-view" width="24"
+                                height="24">
+                            <span>
+                                Ben
+                                <svg id="global-nav-icon--classic__down-arrow" width="16" height="16"
+                                    data-supported-dps="16x16">
+                                    <path
+                                        d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item header__nav-list-item--divider">
+                        <a class="header__nav-list-item-link" href="">
+                            <svg id="global-nav-icon--classic__work" height="24" width="24">
+                                <path
+                                    d="M10 10h4v4h-4v-4zm0 11h4v-4h-4v4zm-7-7h4v-4H3v4zm0 7h4v-4H3v4zM3 7h4V3H3v4zm14 7h4v-4h-4v4zm0-11v4h4V3h-4zm-7 4h4V3h-4v4zm7 14h4v-4h-4v4z">
+                                </path>
+                            </svg>
+                            <span>
+                                İş
+                                <svg id="global-nav-icon--classic__down-arrow" width="16" height="16"
+                                    data-supported-dps="16x16">
+                                    <path
+                                        d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a class="header__nav-list-item-link header__nav-list-item-link--premium" href="">
+                            <p>Premium'u 1 Ay Ücretsiz Deneyin</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </header>
-
-    <div class="content-area mx-auto">
-        <aside class="left-side">
-            <div class="summary d-flex flex-column justify-content-center align-items-center">
-                <div class="profile-section d-flex flex-column justify-content-center align-items-center">
-                    <img class="profile-img d-block" src="https://media-exp1.licdn.com/dms/image/C5603AQGOWlnp2QWz2A/profile-displayphoto-shrink_100_100/0/1564052885815?e=1624492800&v=beta&t=em2baicdAvg7ZcRutO8N21VxQeApU0AIGVLKoXQ7gYM" alt="">
-                    <span class="name d-block"><b>Enes Başpınar</b></span>
-                    <span class="job">Junior Front-End Developer</span>
-                </div>
-                <div class="shows">
-                    <div class="profile-viewed">
-                        <span class="text">Profilinizi kimler görüntüledi</span>
-                        <span class="number">201</span>
-                    </div>
-                    <div class="post-viewed">
-                        <span class="text">Yayınınız için görüntüleme</span>
-                        <span class="number">101</span>
-                    </div>
-                </div>
-                <div class="premium-section">
-                    <span class="text">Özel araç ve içgörülere erişin</span>
-                    <span class="premium-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" class="mercado-match" width="24" height="24" focusable="false">
-                            <path d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z" fill="#f8c77e"></path>
-                            <path d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z" fill="#e7a33e"></path>
-                          </svg>
-                        Premium’u 1 Ay Ücretsiz Deneyin
-                    </span>
-                </div>
-                <div class="items">
-                    <span class="premium-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
-                            <path d="M12 1H4a1 1 0 00-1 1v13.64l5-3.36 5 3.36V2a1 1 0 00-1-1z"></path>
-                          </svg>
-                          Öğelerim
-                    </span>
-                </div>
-            </div>
-            <div class="explore">
-                <div class="background-img">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </aside>
-        <main class="middle-side">
-
-        </main>
-        <aside class="right-side">
-
-        </aside>
     </div>
 
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <div class="main-container">
+        <div class="main">
+            <div class="main__left-side">
+                <div class="main__info box-border">
+                    <div class="main__profile">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D16AQHtCd-UesWCFg/profile-displaybackgroundimage-shrink_200_800/0/1611429390441?e=1624492800&v=beta&t=xiuYq1onVBjP6E-TQeoHvNgdOc5zilGhx2pcqlanbGo"
+                            alt="" class="main__bg-img">
+                        <img src="https://media-exp1.licdn.com/dms/image/C5603AQGOWlnp2QWz2A/profile-displayphoto-shrink_100_100/0/1564052885815?e=1624492800&v=beta&t=em2baicdAvg7ZcRutO8N21VxQeApU0AIGVLKoXQ7gYM"
+                            alt="" class="main__pp">
+                        <div class="main__profile-title">Enes Başpınar</div>
+                        <p class="main__profile-subtitle">Junior Front-End Developer</p>
+                    </div>
+                    <div class="main__stats">
+                        <div class="main__stat">
+                            <span class="main__stat-desc">
+                                Profilinizi kimler görüntüledi
+                            </span>
+                            <span class="main__stat-count">
+                                212
+                            </span>
+                        </div>
+                        <div class="main__stat">
+                            <span class="main__stat-desc">
+                                Yayınınız için görüntüleme
+                            </span>
+                            <span class="main__stat-count">
+                                341
+                            </span>
+                        </div>
+                    </div>
+                    <div class="main__try-premium">
+                        <a href="">
+                            <span class="main__premium-text-1">Özel araç ve içgörülere erişin</span>
+                            <span class="main__premium-text-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                    class="mercado-match" width="16" height="16" focusable="false">
+                                    <path
+                                        d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                                        fill="#f8c77e"></path>
+                                    <path
+                                        d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                                        fill="#e7a33e"></path>
+                                </svg>
+                                Premium'u 1 Ay Ücretsiz Deneyin
+                            </span>
+                        </a>
+                    </div>
+                    <div class="main__collections">
+                        <span class="t-12 t-black t-bold v-align-middle block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                                fill="currentColor" width="16" height="16" focusable="false">
+                                <path d="M12 1H4a1 1 0 00-1 1v13.64l5-3.36 5 3.36V2a1 1 0 00-1-1z"></path>
+                            </svg>Ögelerim
+                        </span>
+                    </div>
+                </div>
+                <div class="main__explore box-border">
+                    <div class="main__explore-items">
+                        <div class="main__explore-item">
+                            <a href="">Gruplar</a>
+                        </div>
+                        <div class="main__explore-item main__explore-item--button">
+                            <a href="">Etkinlikler</a>
+                            <a class="main__plus-btn" href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                                    fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="main__explore-item">
+                            <a href="">Takip edilen hashtagler</a>
+                        </div>
+                    </div>
+                    <div class="main__explore-more">
+                        Daha fazla keşfet
+                    </div>
+                </div>
+            </div>
+            <div class="main__content">
+                <div class="post-write box-border">
+                    <div class="top-section">
+                        <a href="">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQGOWlnp2QWz2A/profile-displayphoto-shrink_100_100/0/1564052885815?e=1624492800&v=beta&t=em2baicdAvg7ZcRutO8N21VxQeApU0AIGVLKoXQ7gYM" alt="">
+                        </a>
+                        <button>Bir gönderi başlat</button>
+                    </div>
+                    <div class="bot-section">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgb(112, 181, 249)" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+                              </svg>
+                              <span>Fotoğraf</span>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgb(127, 193, 94)" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+                              </svg>
+                              <span>Video</span>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgb(231, 163, 62)" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
+                              </svg>
+                              <span>Etkinlik</span>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgb(245, 152, 126)" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+                              </svg>
+                              <span>Yazı yaz</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                    <div class="sort">
+                        <span>Sıralama ölçütü:</span>
+                        <span class="sort-selection">En Önemli <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                            <path d="M8 11L3 6h10z" fill-rule="evenodd"></path>
+                          </svg></span>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="post">
+
+                    </div>
+                </div>
+            </div>
+            <div class="main__right-side">
+                
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
