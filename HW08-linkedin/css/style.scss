@@ -97,6 +97,10 @@ body {
         display: flex;
         align-items: center;
 
+        &--search {
+          display: none;
+        }
+
         &-link {
           height: 100%;
           font-size: 12px;
@@ -659,6 +663,13 @@ body {
   .header__search-area {
     display: none;
   }
+
+  .header__nav-list-item {
+
+    &--search {
+      display: block;
+    }
+  }
 }
 
 @media screen and (max-width: 835px) {
@@ -672,6 +683,7 @@ body {
     &--active {
       border: none;
     }
+
   }
 
   .header__nav > ul > li > a > span {
