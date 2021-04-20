@@ -3,6 +3,26 @@ $input-bg: rgb(238, 243, 248);
 $deactive-nav-item-cl: rgba(0, 0, 0, 0.6);
 $premium-cl: #915907;
 
+.text-gray {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.fs-16px {
+  font-size: 16px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
 body {
   background-color: $site-bg;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -127,9 +147,11 @@ body {
   }
 }
 
+
 .main {
   margin: 24px auto 0;
   width: 1128px;
+  padding-bottom: 50px;
 
   display: flex;
 
@@ -270,7 +292,6 @@ body {
 
   &__content {
     width: 540px;
-    height: 50px;
 
     .post-write {
       background-color: white;
@@ -311,54 +332,320 @@ body {
         padding-bottom: 4px;
 
         * {
-            vertical-align: middle;
+          vertical-align: middle;
         }
 
         a {
-            padding: 0 8px;
-            height: 48px;
-            margin-top: auto;
-            line-height: 48px;
-            border-radius: 4px;
-            color: rgba(0, 0, 0, 0.6);
+          padding: 0 8px;
+          height: 48px;
+          margin-top: auto;
+          line-height: 48px;
+          border-radius: 4px;
+          color: rgba(0, 0, 0, 0.6);
 
-            &:hover {
-                background-color: rgba(0,0,0,0.08);
-            }
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.08);
+          }
         }
       }
     }
 
     .divider {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      hr {
+        flex-grow: 1;
+        color: rgba(0, 0, 0, 0.15);
+      }
+
+      .sort {
+        margin-left: 10px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.6);
         display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        hr {
-            flex-grow: 1;
-            color: rgba(0, 0, 0, 0.15);
+        .sort-selection {
+          display: flex;
+          margin-left: 4px;
+          font-weight: 600;
+          color: black;
         }
+      }
+    }
 
-        .sort {
-            margin-left: 10px;
-            font-size: 12px;
-            color: rgba(0, 0, 0, 0.6);
-            display: flex;
+    .posts {
+      color: black;
 
-           .sort-selection {
-            display: flex;
-            margin-left: 4px;
-            font-weight: 600;
+      .post {
+        margin-bottom: 8px;
+        background-color: white;
+
+        .post-header {
+          margin: 0 16px;
+          padding: 7px 0;
+          display: flex;
+          justify-content: space-between;
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 12px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          display: flex;
+          align-items: center;
+
+          a {
             color: black;
-           }
+            font-weight: 600;
+          }
         }
+
+        .post-profile {
+          padding: 12px 16px 0;
+          margin-bottom: 8px;
+          display: flex;
+
+          .post-pp {
+            width: 48px;
+            height: 48px;
+            position: relative;
+
+            img {
+              width: 48px;
+              border-radius: 100%;
+            }
+
+            .online-indicator {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 15px;
+              height: 15px;
+              background-color: green;
+              border-radius: 100%;
+              border: 2px solid white;
+            }
+          }
+
+          .post-profile-text {
+            font-size: 12px;
+            margin-left: 8px;
+            display: flex;
+            flex-direction: column;
+
+            .time {
+              line-height: 5px;
+            }
+
+            span {
+              vertical-align: middle;
+            }
+
+            svg {
+              width: 14px;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .post-content {
+          margin: 0 16px;
+          overflow: hidden;
+
+          .break-word {
+            word-wrap: break-word !important;
+            word-break: break-word !important;
+          }
+
+          .post-img {
+            margin-top: 8px;
+            width: 100%;
+          }
+        }
+
+        .post-interactions {
+          padding: 8px 0;
+          margin: 0 16px;
+          display: flex;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+          .post-interaction-link {
+            display: flex;
+            align-items: center;
+            margin-right: 3px;
+
+            img {
+              margin-right: 3px;
+            }
+          }
+        }
+
+        .post-interaction-buttons {
+          padding: 4px 8px;
+          list-style-type: none;
+          display: flex;
+
+          .post-interaction-button {
+            display: flex;
+            align-items: center;
+            padding: 10px 8px;
+
+            svg {
+              vertical-align: middle;
+            }
+
+            span {
+              vertical-align: middle;
+            }
+
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.08);
+              border-radius: 3px;
+            }
+          }
+        }
+      }
     }
   }
 
   &__right-side {
     width: 315px;
-    height: 50px;
     margin-left: 25px;
+
+    .add-to-flow {
+      padding: 12px;
+      background-color: white;
+      margin-bottom: 8px;
+
+      .add-to-flow-header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      svg {
+        vertical-align: middle;
+      }
+
+      .follow-list {
+        list-style-type: none;
+        margin-top: 16px;
+
+        li {
+          display: flex;
+          margin: 12px 0;
+
+          img {
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            margin-right: 12px;
+          }
+
+          .follow-item-desc {
+            display: flex;
+            flex-direction: column;
+
+            a {
+              color: black;
+              display: flex;
+              align-items: center;
+            }
+
+            .follow-button {
+              margin-top: 6px;
+              border: 1px solid rgba(0, 0, 0, 0.6);
+              border-radius: 20px;
+              width: 115px;
+              padding: 6px 16px;
+              color: rgba(0, 0, 0, 0.6);
+              vertical-align: middle;
+              
+              svg {
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .most-viewed-lesson {
+      background-color: white;
+      padding: 12px 0 12px;
+
+      .show-more {
+        padding: 10px 13px 2px 12px;
+
+        svg {
+          vertical-align: middle;
+        }
+      }
+
+
+      .most-viewed-lesson-header {
+        padding: 0 12px 12px 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .most-viewed-lessons {
+        list-style-type: none;
+
+        .most-viewed-ls {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-bottom: 4px;
+
+          &:hover {
+            background-color: rgba(0,0,0,0.08);
+          }
+
+          .most-viewed-ls-title {
+            padding: 4px 32px 4px 12px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .most-viewed-ls-subtitle {
+            padding: 0 32px 4px 27px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+
+    .footer {
+      margin-top: 16px;
+
+      .footer-items {
+        list-style-type: none;
+        margin: 16px 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .footer-item {
+          display: inline;
+          margin: 4px 8px;
+        }
+      }
+
+      .copyright {
+        display: flex;
+      justify-content: center;
+
+      svg {
+        margin-right: 3px;
+      }
+      }
+    }
   }
 }
 
