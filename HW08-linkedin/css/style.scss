@@ -37,9 +37,24 @@ body {
   border-radius: 0.4rem;
 }
 
+.shadow {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .header__container {
   background-color: white;
   padding: 0 24px;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header {
@@ -75,10 +90,15 @@ body {
     height: 34px;
     width: 100%;
     padding: 0 8px 0 40px;
+    position: static;
     border: none;
     box-shadow: none;
     outline: none;
     background-color: $input-bg;
+    
+    &:focus + .shadow {
+        display: block;
+    }
   }
 
   &__nav {
@@ -216,6 +236,11 @@ body {
     &-count {
       color: rgb(10, 102, 194);
     }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+    }
   }
 
   &__try-premium {
@@ -251,6 +276,11 @@ body {
       vertical-align: middle;
       margin-right: 8px;
     }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+    }
   }
 
   &__explore {
@@ -258,6 +288,8 @@ body {
     padding-top: 10px;
     font-size: 12px;
     font-weight: 600;
+    position: sticky;
+    top: 65px;
 
     &-items {
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -294,6 +326,11 @@ body {
     font-size: 14px;
     text-align: center;
     color: rgba(0, 0, 0, 0.6);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+    }
   }
 
   &__content {
@@ -634,30 +671,32 @@ body {
 }
 
 .right-side {
-  .footer {
+  &__footer {
     margin-top: 16px;
+    position: sticky;
+    top: 65px;
 
-    .footer-items {
+    &-items {
       list-style-type: none;
       margin: 16px 24px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-
-      .footer-item {
-        display: inline;
-        margin: 4px 8px;
-      }
     }
 
-    .copyright {
-      display: flex;
-      justify-content: center;
+    &-item {
+      display: inline;
+      margin: 4px 8px;
+    }
+  }
 
-      svg {
-        margin-right: 3px;
-      }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+
+    svg {
+      margin-right: 3px;
     }
   }
 }

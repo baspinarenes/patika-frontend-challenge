@@ -29,9 +29,25 @@ body {
   border-radius: 0.4rem;
 }
 
+.shadow {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .header__container {
   background-color: white;
   padding: 0 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header {
@@ -74,11 +90,16 @@ body {
   height: 34px;
   width: 100%;
   padding: 0 8px 0 40px;
+  position: static;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
   background-color: #eef3f8;
+}
+
+.header__search-bar:focus + .shadow {
+  display: block;
 }
 
 .header__nav {
@@ -252,6 +273,11 @@ body {
   color: #0a66c2;
 }
 
+.main__stat:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
 .main__try-premium {
   padding: 12px 10px;
   font-size: 12px;
@@ -287,11 +313,19 @@ body {
   margin-right: 8px;
 }
 
+.main__collections:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
 .main__explore {
   background-color: white;
   padding-top: 10px;
   font-size: 12px;
   font-weight: 600;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 65px;
 }
 
 .main__explore-items {
@@ -328,6 +362,11 @@ body {
   font-size: 14px;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.main__explore-more:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .main__content {
@@ -727,11 +766,14 @@ body {
   vertical-align: middle;
 }
 
-.right-side .footer {
+.right-side__footer {
   margin-top: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 65px;
 }
 
-.right-side .footer .footer-items {
+.right-side__footer-items {
   list-style-type: none;
   margin: 16px 24px;
   display: -webkit-box;
@@ -747,12 +789,12 @@ body {
           justify-content: center;
 }
 
-.right-side .footer .footer-items .footer-item {
+.right-side__footer-item {
   display: inline;
   margin: 4px 8px;
 }
 
-.right-side .footer .copyright {
+.right-side__copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,7 +803,7 @@ body {
           justify-content: center;
 }
 
-.right-side .footer .copyright svg {
+.right-side__copyright svg {
   margin-right: 3px;
 }
 
