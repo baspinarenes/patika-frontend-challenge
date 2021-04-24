@@ -2,7 +2,7 @@
 
 ![Kodluyoruz İlk Proje](img/kodluyoruz-ilk-proje.png)
 
-Bu repo, [Kodluyoruz](https://www.kodluyoruz.org/) Front-End eğitimi kapsamında oluşturduğumuz ilk repodur. İçerisinde bir adet README dosyası, bir adet de index.html barındırmaktadır. Challenge için oluşturduğum indeks sayfamın Netlify'da yayınlanmış haline kodluyoruz-assignments.netlify.app/ linkinden ulaşılabilir.
+Bu repo, [Kodluyoruz](https://www.kodluyoruz.org/) Front-End eğitimi kapsamında oluşturduğumuz ilk repodur. İçerisinde bir adet README dosyası, bir adet de index.html barındırmaktadır. Challenge için oluşturduğum indeks sayfamın Netlify'da yayınlanmış haline bu [linkten](https://kodluyoruz-assignments.netlify.app/) ulaşabilirsiniz.
 
 ## Kurulum
 
