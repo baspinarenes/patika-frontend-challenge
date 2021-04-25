@@ -10,6 +10,7 @@ body {
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #222;
+    min-width: 400px;
 }
 
 a {
@@ -134,8 +135,9 @@ a:hover {
 }
 
 .panel__search-buttons {
-    margin: 18px auto 0 auto;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
 }
 
 .panel__search-button {
@@ -189,9 +191,15 @@ a:hover {
     padding: 0 20px;
 }
 
-.panel__fotter-nav-item {
+.panel__footer-nav-item {
     display: flex;
     flex-direction: row;
+}
+
+.panel__footer-nav-item:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 30%;
 }
 
 .panel__footer-nav-item-link {
