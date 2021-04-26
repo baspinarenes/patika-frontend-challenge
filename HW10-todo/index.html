@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+        integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>To-do App</title>
+</head>
+
+<body>
+    <div class="todo">
+        <!-- Todo Header - Start -->
+        <div class="todo__header">
+            <div class="todo__header-date">26/04/2021</div>
+            <div class="todo__header-buttons">
+                <button class="todo__header-button">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+            </div>
+            <div class="todo__header-entry">
+                <input id="todo__header-entry-input" type="text" placeholder="Bugün neler yapmak istiyorsun?">
+            </div>
+        </div>
+        <!-- Todo Header - End -->
+
+        <!-- Todo Body - Start -->
+        <div class="todo__body">
+            <ul class="todo__list">
+
+            </ul>
+        </div>
+        <!-- Todo Body - End -->
+
+        <!-- Todo Footer - Start -->
+        <div class="todo__footer">
+            <div>
+                <input id="completed-todos" type="checkbox">
+                <label for="completed-todos">Tamamlananları Göster</label>
+            </div>
+            <div>
+                <input id="nompleted-todos" type="checkbox">
+                <label for="nompleted-todos">Yapılacakları Göster</label>
+            </div>
+        </div>
+        <!-- Todo Footer - End -->
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

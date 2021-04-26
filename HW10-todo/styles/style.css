@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 600px;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.todo__header {
+  min-height: 80px;
+  background-color: lightgray;
+  border-radius: 15px 15px 0 0;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.todo__header-date {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  vertical-align: middle;
+  line-height: 31px;
+  pointer-events: none;
+}
+
+.todo__header-buttons .todo__header-button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 100%;
+}
+
+.todo__header-buttons .todo__header-button:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 500ms -webkit-transform;
+  transition: 500ms -webkit-transform;
+  transition: 500ms transform;
+  transition: 500ms transform, 500ms -webkit-transform;
+}
+
+.todo__header-buttons .todo__header-button:not(:hover) {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: 500ms -webkit-transform;
+  transition: 500ms -webkit-transform;
+  transition: 500ms transform;
+  transition: 500ms transform, 500ms -webkit-transform;
+}
+
+.todo__header-entry {
+  word-break: break-all;
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo__header-entry input {
+  border: 0;
+  background-color: inherit;
+  font-family: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.4rem;
+}
+
+.todo__header-entry input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.todo__header-entry input:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.todo__header-entry input::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.todo__header-entry input::placeholder {
+  opacity: 1;
+}
+
+.todo__header-entry input:focus {
+  outline: 0;
+}
+
+.todo__body {
+  height: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.todo__body::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.todo__body .todo__list {
+  list-style-type: none;
+}
+
+.todo__body .todo__list .todo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  height: 40px;
+  background-color: #f1f1f1;
+}
+
+.todo__body .todo__list .todo__item:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.todo__body .todo__list .todo__item-text {
+  display: block;
+  margin: 10px 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.todo__body .todo__list .todo__item-remove-btn {
+  height: 100%;
+  width: 40px;
+  border: 0;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+
+.todo__body .todo__list .todo__item-remove-btn svg {
+  pointer-events: none;
+}
+
+.todo__footer {
+  height: 40px;
+  background-color: lightgray;
+  border-radius: 0 0 15px 15px;
+  border-top: 1px solid black;
+  font-size: 0.8rem;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo__footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo__footer div label {
+  margin-left: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.todo__footer div input[type="checkbox"] {
+  height: 1.2em;
+  width: 1.2em;
+  margin: 0 0.2em 0.1em 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: -webkit-linear-gradient(#fcfcfc, #dadada);
+  -webkit-appearance: none;
+}
+
+.todo__footer div input[type="checkbox"]:checked:before {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  content: "\2713";
+  margin-left: 2px;
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=style.css.map */
