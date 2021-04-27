@@ -23,7 +23,8 @@ function main() {
   if (localStorage.getItem("todos")) {
     for (let todo of JSON.parse(localStorage.getItem("todos"))) {
       todos.push(todo);
-      addTodo(todo);
+      console.log(todo.isComplete);
+      addTodo(todo.text, todo.isComplete);
     }
   }
 }
@@ -114,19 +115,22 @@ function showTime() {
 
 function completeTodo(e) {
   let todoSpan = e.target.querySelector("span");
-
   if (todoSpan) {
     if (todoSpan.style.color === "gray") {
       todoSpan.style.textDecoration = "none";
       todoSpan.style.color = "black";
+      todos.find((todo) => todo.text == todoSpan.innerText).isComplete = false;
     } else {
       todoSpan.style.textDecoration = "line-through";
       todoSpan.style.color = "gray";
+      todos.find((todo) => todo.text == todoSpan.innerText).isComplete = true;
+      console.log(todoSpan.innerText);
     }
+    localStorage.setItem("todos", JSON.stringify(todos));
   }
 }
 
-function addTodo(text = "") {
+function addTodo(text = "", isComplete = false) {
   let todoItem = document.createElement("li");
   todoItem.classList.add("todo__item");
   todoItem.addEventListener("click", completeTodo);
@@ -144,6 +148,11 @@ function addTodo(text = "") {
   todoText.innerText = text === "" ? `${todoInputDOM.value}` : text;
   todoText.style.pointerEvents = "none";
 
+  if(isComplete){
+    todoText.style.color = 'gray';
+    todoText.style.textDecoration = "line-through";
+  }
+
   let todoRemoveBtn = document.createElement("button");
   todoRemoveBtn.classList.add("todo__item-remove-btn");
   todoRemoveBtn.innerHTML = `<i class="fas fa-times"></i>`;
@@ -151,7 +160,7 @@ function addTodo(text = "") {
   todoRemoveBtn.addEventListener("click", (e) => {
     todos = todos.filter(
       (todo) =>
-        todo !=
+        todo.text !=
         e.target.parentElement.querySelector(".todo__item-text").innerText
     );
     localStorage.setItem("todos", JSON.stringify(todos));
@@ -171,7 +180,7 @@ function addTodo(text = "") {
   todoListDOM.appendChild(todoItem);
 
   if (text === "") {
-    todos.push(todoInputDOM.value);
+    todos.push({text: todoInputDOM.value, isComplete: false});
     localStorage.setItem("todos", JSON.stringify(todos));
   }
 
