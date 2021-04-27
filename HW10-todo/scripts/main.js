@@ -43,13 +43,16 @@ clearListBtnDOM.addEventListener("click", (e) => {
   todos = [];
 });
 
-todoInputDOM.addEventListener("keydown", (e) =>
-  e.keyCode === 13
-    ? todoListDOM.childElementCount < 12
-      ? addTodo()
-      : alert("Maksimum sayıya ulaşıldı.")
-    : null
-);
+todoInputDOM.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    if (todoListDOM.childElementCount < 12) {
+      addTodo();
+    } else {
+      alert("Maksimum sayıya ulaşıldı.");
+      todoInputDOM.value = "";
+    }
+  }
+});
 
 completedTodosCbDOM.addEventListener("change", (e) => {
   if (e.target.checked) {
@@ -73,25 +76,25 @@ completedTodosCbDOM.addEventListener("change", (e) => {
 });
 
 nompletedTodosCbDOM.addEventListener("change", (e) => {
-    if (e.target.checked) {
-      for (let todo of todoListDOM.children) {
-        let todoSpan = todo.querySelector("span");
-        if (todoSpan.style.color === "gray") {
-          todo.style.display = "none";
-        } else {
-          todo.style.display = "flex";
-        }
-      }
-      completedTodosCbDOM.checked = false;
-    } else {
-      for (let todo of todoListDOM.children) {
-        let todoSpan = todo.querySelector("span");
-        if (todoSpan.style.color === "gray") {
-          todo.style.display = "flex";
-        }
+  if (e.target.checked) {
+    for (let todo of todoListDOM.children) {
+      let todoSpan = todo.querySelector("span");
+      if (todoSpan.style.color === "gray") {
+        todo.style.display = "none";
+      } else {
+        todo.style.display = "flex";
       }
     }
-  });
+    completedTodosCbDOM.checked = false;
+  } else {
+    for (let todo of todoListDOM.children) {
+      let todoSpan = todo.querySelector("span");
+      if (todoSpan.style.color === "gray") {
+        todo.style.display = "flex";
+      }
+    }
+  }
+});
 
 function addTodo(text = "") {
   let todoItem = document.createElement("li");
