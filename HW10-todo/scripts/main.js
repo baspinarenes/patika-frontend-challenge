@@ -9,10 +9,10 @@ const clearListBtnDOM = document.querySelector(
 const completedTodosCbDOM = document.querySelector("#completed-todos");
 const nompletedTodosCbDOM = document.querySelector("#nompleted-todos");
 
+var todos = [];
 main();
 
 function main() {
-  let todos = [];
   showTime();
 
   todoInputDOM.focus();
@@ -46,7 +46,6 @@ todoInputDOM.addEventListener("keydown", (e) => {
         addTodo();
       } else {
         alert("Maksimum sayıya ulaşıldı.");
-        todoInputDOM.value = "";
       }
     }
   }
