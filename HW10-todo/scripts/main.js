@@ -1,3 +1,5 @@
+/****** Select required DOM element ******/
+
 const dateDivDOM = document.querySelector(".todo__header-date");
 const todoInputDOM = document.querySelector("#todo__header-entry-input");
 const todoListDOM = document.querySelector(".todo__list");
@@ -7,37 +9,27 @@ const clearListBtnDOM = document.querySelector(
 const completedTodosCbDOM = document.querySelector("#completed-todos");
 const nompletedTodosCbDOM = document.querySelector("#nompleted-todos");
 
-let todos = [];
-showTime();
+main();
 
-todoInputDOM.focus();
+function main() {
+  let todos = [];
+  showTime();
 
-completedTodosCbDOM.checked = false;
-nompletedTodosCbDOM.checked = false;
+  todoInputDOM.focus();
 
-if (localStorage.getItem("todos")) {
-  for (let todo of JSON.parse(localStorage.getItem("todos"))) {
-    todos.push(todo);
-    addTodo(todo);
+  completedTodosCbDOM.checked = false;
+  nompletedTodosCbDOM.checked = false;
+
+  if (localStorage.getItem("todos")) {
+    for (let todo of JSON.parse(localStorage.getItem("todos"))) {
+      todos.push(todo);
+      addTodo(todo);
+    }
   }
 }
 
-function showTime() {
-  let date = new Date();
-  let options = { year: "numeric", month: "numeric", day: "numeric" };
 
-  const dateFormatted = `${date
-    .toLocaleTimeString("tr-TR", options)
-    .slice(0, -9)}`;
-
-  const timeFormatted = `${date
-    .toLocaleTimeString("tr-TR", options)
-    .slice(-8)}`;
-
-  dateDivDOM.innerHTML = `${dateFormatted} ${timeFormatted}`;
-
-  setTimeout(showTime, 1000);
-}
+/****** Event Listeners ******/
 
 clearListBtnDOM.addEventListener("click", (e) => {
   todoListDOM.innerHTML = "";
@@ -47,8 +39,8 @@ clearListBtnDOM.addEventListener("click", (e) => {
 
 todoInputDOM.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
-    if (todoInputDOM.value == ''){
-      alert('To-do için açıklama girilmedi.');
+    if (todoInputDOM.value == "") {
+      alert("To-do için açıklama girilmedi.");
     } else {
       if (todoListDOM.childElementCount < 12) {
         addTodo();
@@ -102,19 +94,37 @@ nompletedTodosCbDOM.addEventListener("change", (e) => {
   }
 });
 
+/****** Functions ******/
+
+function showTime() {
+  let date = new Date();
+  let options = { year: "numeric", month: "numeric", day: "numeric" };
+
+  const dateFormatted = `${date
+    .toLocaleTimeString("tr-TR", options)
+    .slice(0, -9)}`;
+
+  const timeFormatted = `${date
+    .toLocaleTimeString("tr-TR", options)
+    .slice(-8)}`;
+
+  dateDivDOM.innerHTML = `${dateFormatted} ${timeFormatted}`;
+
+  setTimeout(showTime, 1000);
+}
 
 function completeTodo(e) {
   let todoSpan = e.target.querySelector("span");
 
-    if (todoSpan) {
-      if (todoSpan.style.color === "gray") {
-        todoSpan.style.textDecoration = "none";
-        todoSpan.style.color = "black";
-      } else {
-        todoSpan.style.textDecoration = "line-through";
-        todoSpan.style.color = "gray";
-      }
+  if (todoSpan) {
+    if (todoSpan.style.color === "gray") {
+      todoSpan.style.textDecoration = "none";
+      todoSpan.style.color = "black";
+    } else {
+      todoSpan.style.textDecoration = "line-through";
+      todoSpan.style.color = "gray";
     }
+  }
 }
 
 function addTodo(text = "") {
