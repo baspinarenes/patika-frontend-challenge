@@ -45,11 +45,15 @@ clearListBtnDOM.addEventListener("click", (e) => {
 
 todoInputDOM.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
-    if (todoListDOM.childElementCount < 12) {
-      addTodo();
+    if (todoInputDOM.value == ''){
+      alert('To-do için açıklama girilmedi.');
     } else {
-      alert("Maksimum sayıya ulaşıldı.");
-      todoInputDOM.value = "";
+      if (todoListDOM.childElementCount < 12) {
+        addTodo();
+      } else {
+        alert("Maksimum sayıya ulaşıldı.");
+        todoInputDOM.value = "";
+      }
     }
   }
 });
@@ -96,11 +100,9 @@ nompletedTodosCbDOM.addEventListener("change", (e) => {
   }
 });
 
-function addTodo(text = "") {
-  let todoItem = document.createElement("li");
-  todoItem.classList.add("todo__item");
-  todoItem.addEventListener("click", (e) => {
-    let todoSpan = e.target.querySelector("span");
+
+function completeTodo(e) {
+  let todoSpan = e.target.querySelector("span");
 
     if (todoSpan) {
       if (todoSpan.style.color === "gray") {
@@ -111,7 +113,12 @@ function addTodo(text = "") {
         todoSpan.style.color = "gray";
       }
     }
-  });
+}
+
+function addTodo(text = "") {
+  let todoItem = document.createElement("li");
+  todoItem.classList.add("todo__item");
+  todoItem.addEventListener("click", completeTodo);
   todoItem.addEventListener("mouseover", (e) => {
     let todoDeleteBtn = e.target.querySelector("button");
     todoDeleteBtn.style.display = "block";
