@@ -10,6 +10,8 @@ const nompletedTodosCbDOM = document.querySelector("#nompleted-todos");
 let todos = [];
 showTime();
 
+todoInputDOM.focus();
+
 completedTodosCbDOM.checked = false;
 nompletedTodosCbDOM.checked = false;
 

@@ -26,7 +26,7 @@ button {
   flex-direction: column;
   height: 600px;
   max-width: 450px;
-  width: 100%;
+  min-width: 340px;
   border-radius: 15px;
   border: 1px solid $border-color;
 
