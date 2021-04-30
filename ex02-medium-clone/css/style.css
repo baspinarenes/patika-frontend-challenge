@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.button-one, .button-one--black {
+  height: 38px;
+  padding: 7px 16px 9px 16px;
+  border: 1px solid #292929;
+  border-radius: 20px;
+  color: white;
+}
+
+.button-one--black {
+  background-color: black;
+}
+
+.button-one--green {
+  background-color: #1a8917;
+}
+
+.button-two {
+  width: 128px;
+  padding: 7px 20px 9px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #292929;
+  border-radius: 20px;
+}
+
+body {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  height: 1000px;
+}
+
+.header {
+  background-color: #FFC017;
+  border-bottom: 1px solid #292929;
+}
+
+.header .nav-container {
+  border-bottom: 1px solid #292929;
+  height: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .nav-container .nav {
+  height: 100%;
+  width: 100%;
+  max-width: 1192px;
+  margin: 0 64px;
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav-container .nav .logo svg {
+  height: 25px;
+  vertical-align: middle;
+}
+
+.header .nav-container .nav .nav-links {
+  list-style-type: none;
+}
+
+.header .nav-container .nav .nav-links .nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header .header-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-content-container .header-content {
+  height: 399px;
+  width: 100%;
+  max-width: 1192px;
+  margin: 0 64px;
+  background-image: url(https://miro.medium.com/max/385/1*qcAZgT4Sk37MPSTGBH2KUw.png);
+  background-position: bottom 59px right 32px;
+  background-position-x: right 32px;
+  background-position-y: bottom 59px;
+  background-size: 385px 341px;
+  background-repeat: no-repeat;
+}
+
+.header .header-content-container .header-content .content {
+  padding-top: 33px;
+  padding-bottom: 51px;
+  width: 550px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .header-content-container .header-content .content h1 {
+  font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 74px;
+  letter-spacing: -0.02em;
+}
+
+.header .header-content-container .header-content .content p {
+  margin-top: auto;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.header .header-content-container .header-content .content p a {
+  text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  .header .header-content-container .header-content {
+    background-position: bottom 59px right 80px;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 903.98px) {
+  .header .nav-container .navbar {
+    margin: 0 48px;
+  }
+  .content {
+    width: 500px !important;
+  }
+  .header .header-content-container .header-content {
+    background-position: bottom 59px right 48px;
+  }
+}
+
+@media (min-width: 552px) and (max-width: 727.98px) {
+  .header .nav-container .nav {
+    margin: 0 24px;
+  }
+  .nav-item:not(.last-two) {
+    display: none !important;
+  }
+  .header .header-content-container .header-content {
+    margin: 0 24px;
+    background-position: bottom 28px right -64px;
+  }
+}
+
+@media (max-width: 552px) {
+  .header .nav-container .navbar {
+    margin: 0 24px;
+  }
+  .nav-item:not(.last-one) {
+    display: none !important;
+  }
+  .content {
+    width: 100% !important;
+  }
+  .header .header-content-container .header-content {
+    background-position: bottom 28px right -126px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
