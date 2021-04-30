@@ -1,0 +1,28 @@
+.coin-flipper h1 {
+  margin-bottom: 20px;
+}
+
+.coin-flipper button {
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  color: white;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  background: slateblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.coin-flipper button:hover {
+  background: darkslateblue;
+}
+
+.coin-flipper button:disabled {
+  cursor: not-allowed;
+  background: #d9d7de;
+}
+
+.coin-flipper-number {
+  font-weight: bold;
+}
